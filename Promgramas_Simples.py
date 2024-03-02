@@ -1,12 +1,8 @@
-import math
+num1 = float(input("Primera nota => "))
+num2 = float(input("Segunda nota => "))
+num3 = float(input("Tercera nota => "))
+num4 = float(input("Cuarta nota => "))
 
-radio = float(input("Ingrese el radio => "))
+promedio = (num1 + num2 + num3 + num4) / 4
 
-perimetro = 2 * math.pi * radio
-área = math.pi * radio ** 2
-
-predondeado = round(perimetro, 1)
-areadondeda = round(área, 1)
-
-print(f"Perimetro =>{predondeado}")
-print(f"Área =>{areadondeda}")
+print(f"El promedio es => {promedio}")
