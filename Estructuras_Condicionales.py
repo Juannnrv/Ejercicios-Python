@@ -1,14 +1,25 @@
-caracter = input("Ingrese el caracter => ")
+operando1 = float(input("Operando 1: "))
+operador = input("Operador (+, -, *, /): ")
+operando2 = float(input("Operando 2: "))
 
-if caracter.isdigit(): # isdigit() => número
-    print("Es un número")
-    
-    #isalpha() => letra
-elif caracter.isalpha() and caracter.islower(): # islower() => minuscula
-    print("Es una letra minúscula")
-elif caracter.isalpha() and caracter.isupper(): #isupper() => mayuscula
-    print("Es una letra mayúscula")
+if operador == "+":
+    resultado = operando1 + operando2
+elif operador == "-":
+    resultado = operando1 - operando2
+elif operador == "*":
+    resultado = operando1 * operando2
+elif operador == "/":
+    if operando2 != 0:  # operar la división por cero
+        resultado = operando1 / operando2
+    else:
+        print("Error: No se puede dividir por cero.")
+        resultado = None
 else:
-    print("No es letra ni número")
+    print("Error: Operador inválido.")
+    resultado = None
+
+if resultado is not None:
+    print(f"Resultado: {resultado}")
+
 
 
