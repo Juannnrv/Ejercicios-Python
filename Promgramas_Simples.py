@@ -1,6 +1,5 @@
-actual = int(input("Hora actual => "))
-cantidad = int(input("Cantidad de horas => "))
+decimal = float(input("Ingrese un número => "))
 
-futura = (actual + cantidad) % 12
+parte_decimal = decimal - int(decimal)
 
-print(f"En {cantidad} horas, el reloj marcará las {futura}")
+print(parte_decimal)
