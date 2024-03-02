@@ -1,3 +1,7 @@
-celsius = int(input("Ingresa la temperatura Celcius => "))
-farenheit = (celsius * 9/5) + 32 
-print("Esta es la temperatura en Farenheit =>", farenheit)
+print("Vamos a ver cuales son los números pares e impares")
+num = int(input("Dame un número => "))
+x = num % 2
+if x == 0:
+    print("El número que me diste es par")
+else:
+    print("El número que me diste es impar")
