@@ -1,8 +1,6 @@
-num = int(input("Ingresa un número => "))
+anno = int(input("Ingrese un año: "))
 
-par = num % 2
-
-if par == 0:
-    print("Su número es par")
+if (anno % 4 == 0 and anno % 100 != 0) or (anno % 400 == 0):
+    print(f"{anno} es bisiesto")
 else:
-    print("Su número es impar")
+    print(f"{anno} no es bisiesto")
