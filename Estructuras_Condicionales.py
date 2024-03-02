@@ -1,14 +1,9 @@
-palabra1 = input("Palabra 1 => ")
-palabra2 = input("Palabra 2 => ")
+numero1 = float(input("Ingrese numero: "))
+numero2 = float(input("Ingrese numero: "))
+numero3 = float(input("Ingrese numero: "))
+numero4 = float(input("Ingrese numero: "))
 
-longitud_palabra1 = len(palabra1) # len() contar caracteres
-longitud_palabra2 = len(palabra2)
+numeros_ordenados = sorted([numero1, numero2, numero3, numero4]) # sorted([]) => hay que convertir en lista para ordenar
 
-if longitud_palabra1 > longitud_palabra2:
-    diferencia = longitud_palabra1 - longitud_palabra2
-    print(f"La palabra {palabra1} tiene {diferencia} letras más que {palabra2}.")
-elif longitud_palabra2 > longitud_palabra1:
-    diferencia = longitud_palabra2 - longitud_palabra1
-    print(f"La palabra {palabra2} tiene {diferencia} letras más que {palabra1}.")
-else:
-    print("Las dos palabras tienen el mismo largo.")
+print(*numeros_ordenados)
+
