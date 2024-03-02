@@ -1,6 +1,5 @@
-cm = int(input("ingrese longitud => "))
+num = int(input("ingrese un número de tres digitos => "))
 
-pulgadas = cm / 2.54
-pulredondeadas = round(pulgadas, 4)
+reves = str(num)[::-1] # str() => cambiar a un string
 
-print(f"{cm} cm => {pulredondeadas} in")
+print(f"{reves}")
