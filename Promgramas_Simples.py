@@ -1,5 +1,6 @@
-num = int(input("ingrese un número de tres digitos => "))
+a = int(input("Ingrese el cateto a => "))
+b = int(input("Ingrese el cateto b => "))
 
-reves = str(num)[::-1] # str() => cambiar a un string
+hipotenusa = (a ** 2 + b ** 2) ** 0.5
 
-print(f"{reves}")
+print(f"La hipotenusa es => {hipotenusa}")
