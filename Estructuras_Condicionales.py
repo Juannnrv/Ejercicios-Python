@@ -1,9 +1,14 @@
-numero1 = float(input("Ingrese numero: "))
-numero2 = float(input("Ingrese numero: "))
-numero3 = float(input("Ingrese numero: "))
-numero4 = float(input("Ingrese numero: "))
+caracter = input("Ingrese el caracter => ")
 
-numeros_ordenados = sorted([numero1, numero2, numero3, numero4]) # sorted([]) => hay que convertir en lista para ordenar
+if caracter.isdigit(): # isdigit() => número
+    print("Es un número")
+    
+    #isalpha() => letra
+elif caracter.isalpha() and caracter.islower(): # islower() => minuscula
+    print("Es una letra minúscula")
+elif caracter.isalpha() and caracter.isupper(): #isupper() => mayuscula
+    print("Es una letra mayúscula")
+else:
+    print("No es letra ni número")
 
-print(*numeros_ordenados)
 
