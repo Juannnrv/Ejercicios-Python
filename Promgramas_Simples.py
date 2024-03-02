@@ -1,6 +1,6 @@
-a = int(input("Ingrese el cateto a => "))
-b = int(input("Ingrese el cateto b => "))
+actual = int(input("Hora actual => "))
+cantidad = int(input("Cantidad de horas => "))
 
-hipotenusa = (a ** 2 + b ** 2) ** 0.5
+futura = (actual + cantidad) % 12
 
-print(f"La hipotenusa es => {hipotenusa}")
+print(f"En {cantidad} horas, el reloj marcará las {futura}")
