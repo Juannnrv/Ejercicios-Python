@@ -1,7 +1,4 @@
-print("Vamos a ver cuales son los números pares e impares")
-num = int(input("Dame un número => "))
-x = num % 2
-if x == 0:
-    print("El número que me diste es par")
-else:
-    print("El número que me diste es impar")
+b = int(input("Dame la medida de la base del triangulo => "))
+a = int(input("Dame la medida de la altura del triangulo => "))
+area = (b * a) / 2
+print("Esta es el área de tu triangulo =>", area)
