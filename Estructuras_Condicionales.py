@@ -1,6 +1,13 @@
-anno = int(input("Ingrese un año: "))
+dividiendo = int(input("Dividiendo => "))
+divisor = int(input("Divisor => "))
 
-if (anno % 4 == 0 and anno % 100 != 0) or (anno % 400 == 0):
-    print(f"{anno} es bisiesto")
+cociente = dividiendo // divisor
+residuo = dividiendo % divisor
+
+if residuo == 0:
+    print("La división es exacta")
 else:
-    print(f"{anno} no es bisiesto")
+    print("La división no es exacta")
+
+print(f"Cociente => {cociente}")
+print(f"Residuo => {residuo}")
