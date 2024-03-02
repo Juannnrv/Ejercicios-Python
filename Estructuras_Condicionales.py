@@ -1,25 +1,25 @@
-operando1 = float(input("Operando 1: "))
-operador = input("Operador (+, -, *, /): ")
-operando2 = float(input("Operando 2: "))
+from time import localtime
 
-if operador == "+":
-    resultado = operando1 + operando2
-elif operador == "-":
-    resultado = operando1 - operando2
-elif operador == "*":
-    resultado = operando1 * operando2
-elif operador == "/":
-    if operando2 != 0:  # operar la división por cero
-        resultado = operando1 / operando2
-    else:
-        print("Error: No se puede dividir por cero.")
-        resultado = None
-else:
-    print("Error: Operador inválido.")
-    resultado = None
+print ("Ingrese su fecha de nacimiento")
+dia_nacimiento = int(input("Día => "))
+mes_nacimiento = int(input("Mes => "))
+anno_nacimiento = int(input("Año => "))
 
-if resultado is not None:
-    print(f"Resultado: {resultado}")
+# Obtener la fecha actual
+fecha_actual = localtime()
+
+# Obtener el día, mes y año actuales
+dia_actual = fecha_actual.tm_mday
+mes_actual = fecha_actual.tm_mon
+anno_actual = fecha_actual.tm_year
+
+edad = anno_actual - anno_nacimiento
+
+if mes_actual < mes_nacimiento or (mes_actual == mes_nacimiento and dia_actual < dia_nacimiento):
+    edad -= 1
+
+print("Usted tiene", edad, "años.")
+
 
 
 
