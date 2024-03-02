@@ -1,8 +1,6 @@
-num1 = float(input("Primera nota => "))
-num2 = float(input("Segunda nota => "))
-num3 = float(input("Tercera nota => "))
-num4 = float(input("Cuarta nota => "))
+cm = int(input("ingrese longitud => "))
 
-promedio = (num1 + num2 + num3 + num4) / 4
+pulgadas = cm / 2.54
+pulredondeadas = round(pulgadas, 4)
 
-print(f"El promedio es => {promedio}")
+print(f"{cm} cm => {pulredondeadas} in")
