@@ -1,8 +1,8 @@
 num = int(input("Ingrese un número => "))
 
-for i in range(1, 11):
+for i in range(num + 1):
 
- resultado = i * num
+ resultado = 2 ** i
 
- print(f"{i} x {num} = {resultado} ")
+ print(f"{resultado}")
 
