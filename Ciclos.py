@@ -1,9 +1,12 @@
-num1 = int(input("Ingrese un número 1 => "))
-num2 = int(input("Ingrese un número 2 => "))
+for i in range(1, 11): # i son filas
+    
+    fila = [] # imprimir en formato de lista
 
-suma_total = 0 # poder iniciar desde 0 
+    for j in range(1, 11): # j son columnas
+        producto = i * j
+        fila.append(producto) # agrego el resultado de la multiplicación a la lista
+    
+    print(" ".join(f"{num: >3}" for num in fila)) # con .join dejamos un espacio entre cada número
 
-for i in range(num1 + 1, num2):
-    suma_total += i # es como tener "suma_total = suma_total + i"
+    # ">" sangría a la derecha
 
-print(f"La suma es {suma_total}")
