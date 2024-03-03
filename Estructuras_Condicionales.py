@@ -1,17 +1,23 @@
-a = float(input("Ingrese el lado a: "))
-b = float(input("Ingrese el lado b: "))
-c = float(input("Ingrese el lado c: "))
 
-if a >= b + c or b >= a + c or c >= a + b:
-    print("No es un triángulo válido.")
-else:
-    # Que triangulo es ?
-    if a == b == c:
-        print("El triángulo es equilátero.")
-    elif a == b or a == c or b == c:
-        print("El triángulo es isósceles.")
+estatura = float(input("Ingrese su estatura en metros: "))
+peso = float(input("Ingrese su peso en kilogramos: "))
+edad = int(input("Ingrese su edad en años: "))
+
+imc = peso / (estatura * estatura)
+
+if edad < 45:
+    if imc < 22.0:
+        riesgo = "bajo"
     else:
-        print("El triángulo es escaleno.")
+        riesgo = "medio"
+else:
+    if imc < 22.0:
+        riesgo = "medio"
+    else:
+        riesgo = "alto"
+
+print("Su condición de riesgo es:", riesgo)
+
 
 
 
